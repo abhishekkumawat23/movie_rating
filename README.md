@@ -25,7 +25,7 @@ cd movie_rating
 2. Write any text like `Hello World!` in it.
 3. Open terminal from VS code (`Ctrl+Shft+P`). Do everything from now on in VS code terminal and not in external terminal. VS code terminal allows easy way to log into Github account.
 4. Add the changes to git using
-`git add .`
+`git add -A`
 5. Commit the changes and write a message explaining the commit:
 `git commit -m "My first commit"`
 6. Push the git changes. This command ask for authentication first time by opening github login in browser.
@@ -42,7 +42,7 @@ Run commands from the integrated terminal of the VS code.
 Add the gitignore file to avoid commiting and pushing node modules to the remote github
 1. Create file called `.gitignore` in the root folder of the project.
 2. Add `node_modules` as file content.
-3. `git add .` to add the changes to git
+3. `git add -A` to add the changes to git
 4. `git commit -m "Adding gitignore file"`
 5. `git push`
 
@@ -51,9 +51,15 @@ Add the gitignore file to avoid commiting and pushing node modules to the remote
 2. `cd client`
 3. Run `npm init` to create a `package.json` file.
 4. Run `npm install react` to add `react` dep in the project.
+5. `git add -A` to add the changes to git
+6. `git commit -m "Adding client side package json"`
+7. `git push`
 
 ## Server
 1. Create directory named `server` in the root folder of project.
 2. `cd server`
 3. Run `npm init` to create a `package.json` file.
 4. Run `npm install express` to add `express` dep in the project.
+5. `git add -A` to add the changes to git
+6. `git commit -m "Adding server side package json"`
+7. `git push`
