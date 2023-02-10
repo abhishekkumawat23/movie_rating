@@ -30,3 +30,30 @@ cd movie_rating
 `git commit -m "My first commit"`
 6. Push the git changes. This command ask for authentication first time by opening github login in browser.
 `git push`
+
+## Install NodeJs and NPM
+1. Install NodeJs from https://nodejs.org/en/. This installation will install both NodeJs and npm.
+2. From the integrated terminal of VS code, run `npm --version` to confirm that command is installed properly.
+
+# NPM initialization
+Run commands from the integrated terminal of the VS code.
+
+## Add gitignore file
+Add the gitignore file to avoid commiting and pushing node modules to the remote github
+1. Create file called `.gitignore` in the root folder of the project.
+2. Add `node_modules` as file content.
+3. `git add .` to add the changes to git
+4. `git commit -m "Adding gitignore file"`
+5. `git push`
+
+## Client
+1. Create directory named `client` in the root folder of project.
+2. `cd client`
+3. Run `npm init` to create a `package.json` file.
+4. Run `npm install react` to add `react` dep in the project.
+
+## Server
+1. Create directory named `server` in the root folder of project.
+2. `cd server`
+3. Run `npm init` to create a `package.json` file.
+4. Run `npm install express` to add `express` dep in the project.
