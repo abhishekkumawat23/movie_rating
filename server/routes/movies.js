@@ -8,7 +8,6 @@ const movieRequestHandler = async (req, res, next) => {
   res.send(movies);
 }
 
-/* GET users listing. */
 router.get('/', movieRequestHandler);
 
 module.exports = router;
