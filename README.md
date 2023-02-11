@@ -9,12 +9,15 @@
 2. Run `git --version` to see that output is coming showing the version of git.
 
 ## Clone repository
-Copy the HTTPS path of the created repository from the github account and then clone using `git clone` command.
+Copy the HTTPS path of your created repository from the github account and then clone using `git clone` command. For example, my repository link is: `https://github.com/abhishekkumawat23/movie_rating.git`, so I am using following commands:
 ```
 cd Desktop
 git clone https://github.com/abhishekkumawat23/movie_rating.git
 cd movie_rating
 ```
+For your case, the repository link will be different. Find the HTTPS path in the `Code` section to get the link.
+
+`cd` command means change directory.
 
 ## Install VS code and open project
 1. Install VS code.
@@ -54,18 +57,18 @@ We will install the basic skeleton of React app by running a command provided by
 
 ## Server
 We will install the basic skeleton of Express app by running a command provided by express.
-1. Ensure that your VScode terminal is in the root folder of the project. If not use `cd` command.
+1. Ensure that your VScode terminal is in the root folder of the project. If not use `cd` command. For example, if you are in `client` folder, then run `cd ..` to go to the root folder. Note: `..` means go back to the parent folder of the existing folder.
 2. Run `npx express-generator server` command. This command will create a `server` folder and add lot of files in it.
 3. `cd server`
 4. If `.gitignore` command is not present in `server` folder, copy the `.gitignore` file from `client` folder to `server` folder because the express command didn't create it automatically.
 5. If `node_modules` folder is not present in `server` folder, run `npm install` and it will install all dependencies mentioned in `package.json`.
 6. Run `npm start` to start the server. This command will not automatically open the browser, so after running the command, go to browser and run `http://localhost:3000/` and confirm that express content is shown in it.
 7. Stop the server by `Ctrl+C`
-8. We saw that both client and server started at same 300 port. We don't want that because we want to start them in parallel. So, go to `bin/www` and change the line `var port = normalizePort(process.env.PORT || '3000');` to `var port = normalizePort(process.env.PORT || '9000');`. This will allow the server to start at 9000 port.
+8. We saw that both client and server started at same 3000 port. We don't want that because we want to start them in parallel. So, go to `bin/www` and change the line `var port = normalizePort(process.env.PORT || '3000');` to `var port = normalizePort(process.env.PORT || '9000');`. This will allow the server to start at 9000 port.
 9. Run `npm start` again and confirm that server is running at `http://localhost:9000/`.
 10. Add the changes to git using
 `git add -A`
 11. Commit the changes and write a message explaining the commit:
 `git commit -m "Express skeleton"`
-12. Push the git changes.
+12. Push the git changes:
 `git push`
