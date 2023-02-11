@@ -1,10 +1,10 @@
 var express = require('express');
-const { getMovies } = require('../movies');
+const {Movie} = require('../models/index');
 
 var router = express.Router();
 
-const movieRequestHandler = (req, res, next) => {
-  const movies = getMovies();
+const movieRequestHandler = async (req, res, next) => {
+  const movies = await Movie.find();
   res.send(movies);
 }
 
