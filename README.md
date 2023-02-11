@@ -5,7 +5,7 @@
 3. Name the repository "movie_rating"
 
 ## Install git
-1. Install git in your computer.
+1. Install git in your computer. To install, go to https://github.com/git-guides/install-git
 2. Run `git --version` to see that output is coming showing the version of git.
 
 ## Clone repository
