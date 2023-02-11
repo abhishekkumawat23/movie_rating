@@ -17,7 +17,7 @@ cd movie_rating
 ```
 For your case, the repository link will be different. Find the HTTPS path in the `Code` section to get the link.
 
-`cd` command means change directory.
+Note: `cd` in above commands means change directory.
 
 ## Install VS code and open project
 1. Install VS code.
