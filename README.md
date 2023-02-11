@@ -8,7 +8,6 @@
 1. Install git in your computer. To install, go to https://github.com/git-guides/install-git
 2. Run `git --version` to see that output is coming showing the version of git.
 
-temp
 ## Clone repository
 Copy the HTTPS path of your created repository from the github account and then clone using `git clone` command. For example, my repository link is: `https://github.com/abhishekkumawat23/movie_rating.git`, so I am using following commands:
 ```
