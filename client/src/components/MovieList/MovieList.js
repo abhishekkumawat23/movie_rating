@@ -1,11 +1,11 @@
 import "./MovieList.css";
 import Movie from "../Movie/Movie.js";
-import axios from "axios";
+// import axios from "axios";
 
-async function fetchMovies() {
-  const result = await axios.get("http://localhost:9000/movies");
-  return result.data;
-}
+// async function fetchMovies() {
+//   const result = await axios.get("http://localhost:9000/movies");
+//   return result.data;
+// }
 
 function showMovie(movie) {
   return (
@@ -13,8 +13,17 @@ function showMovie(movie) {
   )
 }
 
+// async function MovieList() {
+//   const movies = await fetchMovies();
+//   return (
+//     <div className="MovieList">
+//     {movies.map(showMovie)}
+//     </div>
+//   );
+// }
+
 async function MovieList() {
-  const movies = await fetchMovies();
+  const movies = [];
   return (
     <div className="MovieList">
     {movies.map(showMovie)}
