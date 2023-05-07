@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header.js';
 import MovieList from './components/MovieList/MovieList.js';
+import MovieForm from './components/MovieForm/MovieForm.js';
 import Login from './components/Login/Login.js';
 import Signup from './components/Signup/Signup.js';
 import {useState, useEffect} from "react";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<MovieList />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/movieform" element={<MovieForm />} />
         </Routes>
       </BrowserRouter>
     </div>
